@@ -34,15 +34,15 @@ NOTES: For android you must config ANDROID_HOME first in your android studio env
 ├── src
 │   │
 │   ├── Assets
-│   │   ├── Font ................. Store font for JBwallet (Hirakakupro for japanese language,UTM for other language)
-│   │   ├── Image ................ Store image for JBwallet (logo, notification, textDesign v..v...)
+│   │   ├── Font ................. Store font for PhuotMaps (Hirakakupro for japanese language,UTM for other language)
+│   │   ├── Image ................ Store image for PhuotMaps (logo, notification, textDesign v..v...)
 │   │   ├── Lang ................. Language file include EN for English, JP for Japanese language
 │   │
 │   ├── Common
 │   │   ├── globalConstants.js ................... Const variable not change in all app
 │   │   ├── globalFunction.js .................... Function using in multiple file like formatNumber or activeSocket
 │   │   ├── globalIcon.js ........................ Icon using in all application
-│   │   ├── globalRoutes.js ...................... Routes detail for all screen in JBwallet
+│   │   ├── globalRoutes.js ...................... Routes detail for all screen in PhuotMaps
 │   │   ├── globalStyles.js ...................... Styles using in global like Color, Font, textDefault v..v.. 
 │   │
 │   ├── Controller 
