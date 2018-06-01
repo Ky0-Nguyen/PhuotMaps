@@ -1,0 +1,41 @@
+{
+  "name": "PhuotMaps",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "lint:js": "npm run lint:eslint -- . ",
+    "lint": "npm run lint:js",
+    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts --ignore-pattern generated.*",
+    "test": "jest",
+    "validate": "npm ls"
+  },
+  "dependencies": {
+    "react": "16.3.1",
+    "react-native": "0.55.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "23.0.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-preset-react-native": "4.0.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-flowtype-errors": "^3.6.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "flow-bin": "^0.73.0",
+    "jest": "23.1.0",
+    "precommit-hook-eslint": "^3.0.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
+}
