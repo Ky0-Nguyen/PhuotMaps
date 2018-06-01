@@ -1,4 +1,4 @@
-package com.phuotmap;
+package com.phuotmaps;
 
 import com.facebook.react.ReactActivity;
 

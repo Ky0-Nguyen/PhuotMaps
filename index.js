@@ -1,4 +1,4 @@
-import { AppRegistry } from 'react-native';
-import App from './src/PhuotMaps';
+import { AppRegistry } from 'react-native'
+import App from './src/PhuotMaps'
 
-AppRegistry.registerComponent('PhuotMaps', () => App);
+AppRegistry.registerComponent('PhuotMaps', () => App)
