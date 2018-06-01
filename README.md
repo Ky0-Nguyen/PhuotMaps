@@ -53,9 +53,9 @@ NOTES: For android you must config ANDROID_HOME first in your android studio env
 │   ├── Frontend 
 │   │   ├── Components ............ Store shared component in application like Alert, Input
 │   │   ├── Container .............. Store main component use in all application like Container, Tabbar 
-│   │   ├── Screen .............. Store all screen of JBWallet
+│   │   ├── Screen .............. Store all screen of PhuotMaps
 │   │
-│   ├── jbcWallet.js .......................... Base started page defined routes and loading redux in store
+│   ├── PhuotMaps.js .......................... Base started page defined routes and loading redux in store
 │
 ├── index.js
 ├── package.json
