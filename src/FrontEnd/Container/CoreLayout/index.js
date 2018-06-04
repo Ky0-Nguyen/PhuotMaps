@@ -19,13 +19,10 @@ export default class CoreLayout extends Component {
     const {title, children, CustomHeader, leftAction, rightAction} = this.props
     return (
       <View style={styles.container}>
-        <View>
-          <StatusBar
-            backgroundColor="white"
-            barStyle="dark-content"
-          />
-        </View>
-
+        <StatusBar
+          backgroundColor="white"
+          barStyle="dark-content"
+        />
         {
           CustomHeader ||
           <View style={styles.containerHeader}>

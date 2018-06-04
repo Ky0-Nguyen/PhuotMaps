@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     paddingTop: isIphoneX ? 30 : ISIOS ? 20 : 0
   },
   containerHeader: {
-    flex: 1,
+    flex: 0.7,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     elevation: 2
   },
   containerContent: {
-    flex: 9,
+    flex: 9.3,
     flexDirection: 'column'
   },
   txtTitle: {
