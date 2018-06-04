@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {View, Text, TouchableOpacity} from 'react-native'
+import {View, Text, TouchableOpacity, StatusBar} from 'react-native'
 import PropTypes from 'prop-types'
 
 import styles from './styles'
@@ -15,11 +15,14 @@ export default class CoreLayout extends Component {
     leftAction: PropTypes.func,
     rightAction: PropTypes.func
   }
-
   render () {
     const {title, children, CustomHeader, leftAction, rightAction} = this.props
     return (
       <View style={styles.container}>
+        <StatusBar
+          backgroundColor="white"
+          barStyle="dark-content"
+        />
         {
           CustomHeader ||
           <View style={styles.containerHeader}>

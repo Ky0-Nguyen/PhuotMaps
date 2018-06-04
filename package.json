@@ -11,6 +11,9 @@
     "validate": "npm ls"
   },
   "dependencies": {
+    "appcenter": "^1.5.1",
+    "appcenter-analytics": "^1.5.1",
+    "appcenter-crashes": "^1.5.1",
     "key-mirror": "^1.0.1",
     "prop-types": "^15.6.1",
     "react": "16.3.1",
