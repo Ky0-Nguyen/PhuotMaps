@@ -1,18 +1,33 @@
-import {StyleSheet} from 'react-native'
+import {StyleSheet, Platform, Dimensions} from 'react-native'
 import {width} from 'react-native-dimension'
+
+const ISIOS = Platform.OS === 'ios'
+const deviceHeight = Dimensions.get('window').height
+const deviceWidth = Dimensions.get('window').width
+const isIphoneX = ISIOS && (deviceHeight === 812 || deviceWidth === 812)
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 20,
-    paddingHorizontal: width(3)
+    paddingHorizontal: width(3),
+    paddingTop: isIphoneX ? 30 : ISIOS ? 20 : 0
   },
   containerHeader: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    borderBottomColor: '#c3cec3',
+    borderBottomWidth: 1,
+    shadowColor: 'black',
+    shadowOffset: {
+      width: 1,
+      height: 4
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 10,
+    elevation: 2
   },
   containerContent: {
     flex: 9,
@@ -26,8 +41,7 @@ const styles = StyleSheet.create({
     flex: 8,
     alignItems: 'center',
     justifyContent: 'center',
-    alignSelf: 'center',
-    backgroundColor: 'green'
+    alignSelf: 'center'
   },
   containerLeft: {
     flex: 1,
