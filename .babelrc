@@ -18,7 +18,7 @@
           "common": "./src/Common",
           "controller": "./src/Controller",
           "assets": "./src/Assets",
-          "frontend": "./src/Frontend"
+          "frontend": "./src/FrontEnd"
         }
       }
     ]
