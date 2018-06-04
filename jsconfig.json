@@ -12,7 +12,7 @@
         "./src/Assets/*"
       ],
       "frontend/*": [
-        "./src/Frontend/*"
+        "./src/FrontEnd/*"
       ]
     }
   },
