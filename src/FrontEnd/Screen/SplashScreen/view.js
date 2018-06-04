@@ -1,6 +1,6 @@
 import React from 'react'
 import {View} from 'react-native'
-import CoreLayout from 'frontend/Container/CoreLayout'
+import {CoreLayout} from 'frontend/Container'
 export default class view extends React.Component {
   render () {
     return (
