@@ -1,11 +1,15 @@
-import {StyleSheet} from 'react-native'
+import {StyleSheet, Platform, Dimensions} from 'react-native'
 import {width} from 'react-native-dimension'
+
+const ISIOS = Platform.OS === 'ios'
+const deviceHeight = Dimensions.get('window').height
+const deviceWidth = Dimensions.get('window').width
+const isIphoneX = ISIOS && (deviceHeight === 812 || deviceWidth === 812)
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 20,
-    paddingHorizontal: width(3)
+    paddingTop: isIphoneX ? 30 : ISIOS ? 20 : 0
   },
   containerHeader: {
     flex: 1,
